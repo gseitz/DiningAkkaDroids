@@ -1,0 +1,9 @@
+<manifest package="akkadroid.tests" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="4"></uses-sdk>
+    <application>
+        <uses-library android:name="android.test.runner"></uses-library>
+    </application>
+    <instrumentation 
+    android:label="Tests" android:targetPackage="akkadroid" android:name="android.test.InstrumentationTestRunner">
+</instrumentation>
+</manifest>
