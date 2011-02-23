@@ -1,23 +1,33 @@
 import sbt._
 
 trait Defaults {
-  def androidPlatformName = "android-4"
+  def androidPlatformName = "android-8"
 }
 
-class Parent(info: ProjectInfo) extends ParentProject(info) {
-  override def shouldCheckOutputDirectories = false
-  override def updateAction = task { None }
+class AkkaDroid(info: ProjectInfo) extends AndroidProject(info) 
+    with Defaults with MarketPublish with TypedResources with AkkaProject{
 
-  lazy val main  = project(".", "AkkaDroid", new MainProject(_))
-  lazy val tests = project("tests",  "tests", new TestProject(_), main)
+  override def adbPath = androidSdkPath / "bin" / adbName
+  override def shouldCheckOutputDirectories = false 
 
-  class MainProject(info: ProjectInfo) extends AndroidProject(info) 
-      with Defaults with MarketPublish with TypedResources with AkkaProject {
-        
-        
-    val keyalias  = "change-me"
-    val scalatest = "org.scalatest" % "scalatest" % "1.0" % "test"
+  override def proguardOption = """-keepclassmembers class * {
+      ** MODULE$;
   }
+  
+  -keep class scala.Option
+  -keep class scala.Function1
+  -keep class scala.PartialFunction
+  -keep class akka.**
+  -keep class com.eaio.**
+  -keepclassmembers class com.eaio.**
+  -keepclassmembers class akka.**
+  -keep class org.omg.**
+  -keep class scala.Tuple2
+  -dontskipnonpubliclibraryclassmembers
+  -dontskipnonpubliclibraryclasses
+  """
+  //-dontwarn **$$anonfun$*
+  //
 
-  class TestProject(info: ProjectInfo) extends AndroidTestProject(info) with Defaults
+  val keyalias  = "change-me"
 }
