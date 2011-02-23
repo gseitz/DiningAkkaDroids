@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/widget103" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical">
+	
+	<LinearLayout 
+		android:id="@+id/top" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:orientation="vertical">
+		
+		<RelativeLayout 
+			android:id="@+id/rel01" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent">
+			<ImageView 
+				android:id="@+id/hakker1" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:src="@drawable/jonas" 
+				android:layout_centerInParent="true"/>
+			<ImageView android:id="@+id/hakker1left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/hakker1" android:src="@drawable/chopstick_vert" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"/>
+			<ImageView android:id="@+id/hakker1right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/hakker1" android:src="@drawable/chopstick_vert" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"/>
+		</RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:id="@+id/middle" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:paddingBottom="10dip">
+		
+		<LinearLayout 
+			android:id="@+id/midleft" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5">			
+		
+			<RelativeLayout 
+				android:id="@+id/rel04" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/hakker4left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chopstick_horz" />				
+				<ImageView 
+					android:id="@+id/hakker4" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:src="@drawable/irmo"
+					android:layout_below="@+id/hakker4left"/>				
+				<ImageView android:id="@+id/hakker4right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/hakker4" android:src="@drawable/chopstick_horz" />
+			</RelativeLayout>
+		</LinearLayout>
+
+		<LinearLayout 
+			android:id="@+id/midright" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5">
+		
+			<RelativeLayout 
+				android:id="@+id/rel02" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/hakker2right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chopstick_horz" android:layout_alignParentRight="true" />
+				<ImageView 
+					android:id="@+id/hakker2" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:src="@drawable/viktor"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/hakker2right"/>				
+				<ImageView android:id="@+id/hakker2left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/hakker2" android:src="@drawable/chopstick_horz" android:layout_alignParentRight="true"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:id="@+id/bottom" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+
+
+		<LinearLayout 
+			android:id="@+id/bottomleft" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5">
+		
+			<RelativeLayout 
+				android:id="@+id/rel03" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent">
+				<ImageView 
+					android:id="@+id/hakker3" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:src="@drawable/martin" 
+					android:layout_centerInParent="true"/>
+				<ImageView android:id="@+id/hakker3left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/hakker3" android:src="@drawable/chopstick_vert" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"/>
+				<ImageView android:id="@+id/hakker3right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/hakker3" android:src="@drawable/chopstick_vert" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"/>
+			</RelativeLayout>
+		</LinearLayout>
+		
+		<LinearLayout 
+			android:id="@+id/bottomright" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5">
+		
+			<RelativeLayout 
+				android:id="@+id/rel05" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent">
+				<ImageView 
+					android:id="@+id/hakker5" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:src="@drawable/debasish" 
+					android:layout_centerInParent="true"/>
+				<ImageView android:id="@+id/hakker5left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/hakker5" android:src="@drawable/chopstick_vert" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"/>
+				<ImageView android:id="@+id/hakker5right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/hakker5" android:src="@drawable/chopstick_vert" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
