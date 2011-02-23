@@ -1,4 +1,4 @@
-Very simple proof of concept that Akka[0] actors run on android.
+Very simple proof of concept that Akka[0] actors run on android by example of the DiningHakkersOnFsm[1].
 
 Unfortunately it requires Android 2.3, as akka uses java.util.concurrent.ConcurrentSkipListSet doesn't seem to be supported on the "older" platforms. Please correct me if I'm wrong here.
 
@@ -11,3 +11,4 @@ I've captured a minute of the running emulator for those with no access to an An
 
 
 [0] http://www.akka.io
+[1] https://github.com/jboner/akka/blob/master/akka-samples/akka-sample-fsm/src/main/scala/DiningHakkersOnFsm.scala
