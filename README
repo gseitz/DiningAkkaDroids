@@ -7,4 +7,7 @@ Also had to manually add the interface org.omg.CORBA.portable.IDLEntity, since c
 Also, it took some time to find the right proguard settings.
 
 
+I've captured a minute of the running emulator for those with no access to an Android 2.3.3 phone (which is probably just about everybody): http://www.vimeo.com/20303656
+
+
 [0] http://www.akka.io
