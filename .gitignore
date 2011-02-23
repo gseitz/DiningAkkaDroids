@@ -4,3 +4,4 @@ project/plugins/target
 project/plugins/src_managed
 project/plugins/lib_managed
 project/build/target
+target
