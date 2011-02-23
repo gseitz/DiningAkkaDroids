@@ -1,0 +1,10 @@
+Very simple proof of concept that Akka[0] actors run on android.
+
+Unfortunately it requires Android 2.3, as akka uses java.util.concurrent.ConcurrentSkipListSet doesn't seem to be supported on the "older" platforms. Please correct me if I'm wrong here.
+
+Also had to manually add the interface org.omg.CORBA.portable.IDLEntity, since com.eiao.uuid.UUID depends on it and it's not available on android.
+
+Also, it took some time to find the right proguard settings.
+
+
+[0] http://www.akka.io
