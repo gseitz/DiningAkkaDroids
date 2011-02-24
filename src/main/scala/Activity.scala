@@ -29,7 +29,7 @@ case class Hakker(name: String, activity: MainActivity, left: TypedResource[andr
 }
 
 class MainActivity extends Activity {
-  override def onCreate(savedInstanceState: Bundle) {
+  override def onCreate(savedInstanceState: Bundle) = {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.mainlayout)
 
@@ -50,5 +50,10 @@ class MainActivity extends Activity {
     ) yield Hakker(name, this, imgHandles(i)._1, imgHandles(i)._2)
 
     DiningHakkersOnFsm.run(hakkers)
+  }
+  
+  override def onStop = {
+    akka.actor.Actor.registry.shutdownAll
+    super.onStop
   }
 }
