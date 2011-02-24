@@ -8,7 +8,6 @@ Also, it took some time to find the right proguard settings.
 
 
 I've captured a minute of the running emulator for those with no access to an Android 2.3.3 phone (which is probably just about everybody): http://www.vimeo.com/20303656
-The video is still in the waiting line to be converted (as of 2011-02-23 00:34).
 
 [0] http://www.akka.io
 [1] https://github.com/jboner/akka/blob/master/akka-samples/akka-sample-fsm/src/main/scala/DiningHakkersOnFsm.scala
